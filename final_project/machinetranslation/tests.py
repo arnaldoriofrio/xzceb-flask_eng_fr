@@ -3,10 +3,10 @@ from translator import englishToFrench, frenchToEnglish
 
 class TestMyModule(unittest.TestCase):
     def test_englishToFrench(self):
-        self.assertEqual(englishToFrench(""),"")
+        self.assertEqual(englishToFrench(" ")," ")
         self.assertEqual(englishToFrench("Hello"),"Bonjour")
     def test_frenchToEnglish(self):
-        self.assertEqual(frenchToEnglish(""),"")
+        self.assertEqual(frenchToEnglish(" ")," ")
         self.assertEqual(frenchToEnglish("Bonjour"),"Hello")
 
 if __name__=='__main__':
