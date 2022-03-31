@@ -7,8 +7,8 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-apikey = os.environ['apikey']
-url = os.environ['url']
+apikey = os.environ.get('apikey')
+url = os.environ.get('url')
 
 authenticator = IAMAuthenticator('apikey')
 language_translator = LanguageTranslatorV3(
